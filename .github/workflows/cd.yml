@@ -21,5 +21,4 @@ jobs:
             pip install -r requirements.txt
             sudo systemctl restart fastapi
             sudo systemctl restart nginx
-          timeout: 60s
-          command_timeout: 20m
+          debug: true
