@@ -15,7 +15,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ubuntu
           key: ${{ secrets.SSH_RSA_KEY }}
-          scripts: |
+          script: |
             cd /home/ubuntu/fastapi-book-project
             git pull origin main
             source venv/bin/activate
